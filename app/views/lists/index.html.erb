@@ -1,10 +1,10 @@
 <div class="list-wrap">
 <% @lists.each do |list| %>
-  <div class="lit-box">
+  <div class="list-box">
     <% if list.image.attached? %>
       <%= image_tag list.image, size:"200x200" %>
     <% else %>
-      <%= image_tag 'no-image', size:"200x200" %>
+      <%= image_tag 'no_image', size:"200x200" %>
     <% end %>
     <div class="list-comment">
       <span class="list-body"><%= list.body %></span>
@@ -15,6 +15,7 @@
 </div>
 
 
+<% if false %>
 <h1>投稿一覧</h1>
 <% @lists.each do |list| %>
 
@@ -28,4 +29,6 @@
   <% else %>
     <%= image_tag 'no_image',size:"200x200" %>
   <% end %>
+<% end %>
+
 <% end %>
